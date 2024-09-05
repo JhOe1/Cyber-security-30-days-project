@@ -55,7 +55,7 @@ As a cybersecurity professional, it's important to not only have theoretical kno
 
 ## Contact Information
 
-If you're interested in learning more about my work or discussing potential opportunities, feel free to reach out to me via [LinkedIn](your-linkedin-url) or [email](your-email-url).
+If you're interested in learning more about my work or discussing potential opportunities, feel free to reach out to me via [LinkedIn](https://linkedin.com/in/joseph-igah)
 
 ---
 
