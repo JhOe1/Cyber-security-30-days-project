@@ -41,6 +41,11 @@ Here’s the network architecture diagram illustrating the VM setup and their co
 
 ![Network Architecture Diagram](./network-architecture.png)
 
+Here’s the network architecture diagram illustrating the VM setup and their connections:
+
+![Network Architecture Diagram](./Day%2001/network-architecture.png)
+
+
 
 ## Outcome
 - Successfully designed and documented the network architecture, laying the groundwork for the ELK Stack setup and subsequent security monitoring.
