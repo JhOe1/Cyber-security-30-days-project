@@ -33,19 +33,14 @@ The objective for Day 1 of my 30-Day SOC Analyst Challenge is to design and docu
 - **Command & Control Server**: Using Mythic for attack simulations.
 
 ## Diagram
+Here’s the network architecture diagram illustrating the  setup and their connections:
 
 ![network-architecture](https://github.com/user-attachments/assets/1ba85fda-137a-43e2-94ee-059245a4751d)
 
 
-Here’s the network architecture diagram illustrating the  setup and their connections:
-
-![Network Architecture Diagram](./Day-01/network-architecture.png)
+![network-architecture2](https://github.com/user-attachments/assets/c70fee67-0536-4acd-b7cf-93fe1f45826e)
 
 
-
-Here’s the network architecture diagram illustrating the  setup and their connections:
-
-![Network Architecture Diagram](./Day-01/network-architecture2.png)
 
 
 
