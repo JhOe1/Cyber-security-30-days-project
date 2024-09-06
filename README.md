@@ -16,6 +16,9 @@ By the end of this challenge, I will have developed a well-rounded understanding
 
 ### Weekly Breakdown
 
+![ELK STACK](https://github.com/user-attachments/assets/bc364d75-4c90-44b5-bfb6-f0fa5a3072e1)
+
+
 #### **Week 1: ELK Stack Setup and Log Ingestion**
 - Set up the ELK stack and ingest logs from endpoints.
 - Learn to create dashboards for log visualization.
