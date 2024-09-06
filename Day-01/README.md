@@ -35,7 +35,12 @@ The objective for Day 1 of my 30-Day SOC Analyst Challenge is to design and docu
 ## Diagram
 Here’s the network architecture diagram illustrating the VM setup and their connections:
 
-![Network Architecture Diagram](network-architecture.png)
+[Network Architecture Diagram](network-architecture.png)
+
+Here’s the network architecture diagram illustrating the VM setup and their connections:
+
+![Network Architecture Diagram](./network-architecture.png)
+
 
 ## Outcome
 - Successfully designed and documented the network architecture, laying the groundwork for the ELK Stack setup and subsequent security monitoring.
