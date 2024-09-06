@@ -23,7 +23,7 @@ The objective for Day 1 of my 30-Day SOC Analyst Challenge is to design and docu
 - Configured connections between servers to define data flow:
   - Logs from the Windows and Ubuntu servers are forwarded to the ELK stack through the **Fleet Server**.
   - Security alerts from the ELK stack are sent to the **OS Ticket Server**.
-  - Simulated attack scenarios with roles for **SOC Analyst Laptop** and **Attacker Laptop**.
+  - Simulated attack scenarios with roles for **SOC Analyst Laptop** and **Attacker Machine**.
 
 ### Key Technologies:
 - **Cloud Provider**: Vultr (for VM deployment).
