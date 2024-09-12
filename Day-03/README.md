@@ -19,6 +19,15 @@ Next, I deployed an **Ubuntu** virtual machine with 4 virtual CPUs and 16 GB of 
 ![VPC2 copy](https://github.com/user-attachments/assets/57d642ad-5d6f-46cb-99a0-9f1a75008ef8)
 
 
+### Step 3: Taking a Snapshot for Rollback
+
+To mitigate potential risks during future configurations, I also took a **snapshot** of the current setup. This will allow me to easily revert to this stable state in case of any errors or misconfigurations during subsequent installations and adjustments.
+
+![VPC4 copy](https://github.com/user-attachments/assets/7f49e60f-6168-4c8e-9a05-0711e52a3a09)
+
+
+
+
 I kept the configuration minimal, disabling IPv6 and auto backups. After deployment, I connected to the machine via **SSH** and performed the necessary system updates (`apt-get update` and `apt-get upgrade`), ensuring the system was up to date.
 
 ### Step 3: Installing and Configuring Elasticsearch
