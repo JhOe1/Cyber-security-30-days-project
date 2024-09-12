@@ -16,7 +16,7 @@ The objective for Day 1 of my 30-Day SOC Analyst Challenge is to design and docu
 
 ### Step 2: Setting up Cloud Infrastructure
 - Deployed the infrastructure on **Vultr**, with all virtual machines (VMs) connected within a **Virtual Private Cloud (VPC)**.
-  - Used a **private IP range** of `172.31.0.0/24` for secure server connections.
+  - Used a **private IP range** of `172.33.0.0/24` for secure server connections.
   - Added an **internet gateway** to facilitate traffic routing between the internet and the VPC.
 
 ### Step 3: Connecting Components
