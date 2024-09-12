@@ -4,15 +4,20 @@
 
 ## Day 3: Deploying My First Elasticsearch Instance
 
-Today marks Day 3 of the **30-Day SOC Analyst Challenge**, where I successfully deployed and configured my first **Elasticsearch** instance. This step is critical in the process of building a robust SOC environment, and serves as the foundation for analyzing security data in the days to come.
+Today marks Day 3 of the **30-Day SOC Analyst Challenge**, where I successfully deployed and configured my first **Elasticsearch** instance. This step is critical in the process of building a solid SOC environment, and serves as the foundation for analyzing security data in the days to come.
 
 ### Step 1: Setting Up a Vultr Account and Configuring the VPC
 
-To begin, I created an account on **Vultr**, utilizing the $300 credit offer. I proceeded by setting up a **VPC 2.0** in the **Toronto** region, ensuring all virtual machines remain within the same location for optimal network connectivity. I allocated a private IP range of `172.31.0.0/24` for this project, which will be used throughout the upcoming tasks.
+To begin, I created an account on **Vultr**, utilizing the $300 credit offer. I proceeded by setting up a **VPC 2.0** in the **Manchester** region as it was the cloeset to me, I aslo ensured all virtual machines remain within the same location for optimal network connectivity. I allocated a private IP range of `172.31.x.x/24` for this project, which will be used throughout the upcoming tasks.
 
 ### Step 2: Deploying the Virtual Machine for Elasticsearch
 
-Next, I deployed an **Ubuntu** virtual machine with 4 virtual CPUs and 16 GB of RAM to handle the resource demands of **Elasticsearch**. I kept the configuration minimal, disabling IPv6 and auto backups. After deployment, I connected to the machine via **SSH** and performed the necessary system updates (`apt-get update` and `apt-get upgrade`), ensuring the system was up to date.
+Next, I deployed an **Ubuntu** virtual machine with 4 virtual CPUs and 16 GB of RAM to handle the resource demands of **Elasticsearch**.
+
+![vpc1](https://github.com/user-attachments/assets/15b90054-bb0e-4fc0-95fb-24a294bedc01)
+
+
+I kept the configuration minimal, disabling IPv6 and auto backups. After deployment, I connected to the machine via **SSH** and performed the necessary system updates (`apt-get update` and `apt-get upgrade`), ensuring the system was up to date.
 
 ### Step 3: Installing and Configuring Elasticsearch
 
