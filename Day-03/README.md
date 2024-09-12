@@ -1,10 +1,10 @@
 ## Day 3: Deploying My First Elasticsearch Instance
 
-Welcome to Day 3 of my **30-Day SOC Analyst Challenge**! Today, I took on the challenge of setting up my first-ever **Elasticsearch** instance. Having never worked with Elasticsearch before, this was an exciting new step for me in building out my future SOC environment.
+Welcome to Day 3 of my **30-Day SOC Analyst Challenge**! Today, I took on the challenge of setting up my first-ever **Elasticsearch** instance. 
 
 ### Step 1: Creating a Vultr Account and Setting Up My VPC
 
-To get started, I signed up for **Vultr**, and used the $300 credit offer to fuel this project (thanks for that!). After creating my account, I headed straight to the **Network section** to configure my **VPC 2.0** in **Toronto**—I’ve learned that it’s crucial to keep all my instances in the same region for better connectivity. For the VPC, I went with an IP range of `172.31.0.0/24`, which I’ll be using as the base for my virtual machines as I continue through this challenge.
+To get started, I signed up for **Vultr**, and used the $300 credit offer to fuel this project. After creating my account, I headed straight to the **Network section** to configure my **VPC 2.0** in **Manchester** because its the closeset server to me —I’ve learned that it’s crucial to keep all my instances in the same region for better connectivity. For the VPC, I went with an IP range of `172.31.x.x/24`, which I’ll be using as the base for my virtual machines as I continue through this challenge.
 
 ### Step 2: Deploying My First Virtual Machine for Elasticsearch
 
@@ -38,6 +38,44 @@ If you're interested in learning alongside me, I highly encourage you to follow 
 
 Stay tuned and stay curious!
 
+
+
+
+## Day 3: Deploying My First Elasticsearch Instance
+
+Today marks Day 3 of the **30-Day SOC Analyst Challenge**, where I successfully deployed and configured my first **Elasticsearch** instance. This step is critical in the process of building a robust SOC environment, and serves as the foundation for analyzing security data in the days to come.
+
+### Step 1: Setting Up a Vultr Account and Configuring the VPC
+
+To begin, I created an account on **Vultr**, utilizing the $300 credit offer. I proceeded by setting up a **VPC 2.0** in the **Toronto** region, ensuring all virtual machines remain within the same location for optimal network connectivity. I allocated a private IP range of `172.31.0.0/24` for this project, which will be used throughout the upcoming tasks.
+
+### Step 2: Deploying the Virtual Machine for Elasticsearch
+
+Next, I deployed an **Ubuntu** virtual machine with 4 virtual CPUs and 16 GB of RAM to handle the resource demands of **Elasticsearch**. I kept the configuration minimal, disabling IPv6 and auto backups. After deployment, I connected to the machine via **SSH** and performed the necessary system updates (`apt-get update` and `apt-get upgrade`), ensuring the system was up to date.
+
+### Step 3: Installing and Configuring Elasticsearch
+
+I downloaded **Elasticsearch 8.15** using **Wget** and carefully stored the **security auto-configuration details**, which included the superuser password necessary for future access. I then edited the `elasticsearch.yml` configuration file, updating the **network.host** setting with the appropriate private IP address (`172.31.X.X`) to allow secure access from my local network.
+
+### Step 4: Enhancing Security with Firewall Configurations
+
+Security is paramount, and I ensured that only authorized connections would be permitted. I created a custom **firewall group** within Vultr, restricting **SSH access** to my specific IP address. This additional layer of security reinforces best practices for protecting the server from unauthorized access.
+
+### Step 5: Starting the Elasticsearch Service
+
+The final step involved enabling and starting the **Elasticsearch service**. After verifying that the service was running using `systemctl status elasticsearch`, I confirmed that the installation and configuration were successful. This lays the groundwork for future activities, such as data analysis and security event correlation.
+
+---
+
+### Key Takeaways:
+
+- Setting up and securing cloud infrastructure is a crucial skill for a SOC analyst. The ability to deploy virtual machines and configure private networks will serve me well in a professional environment.
+- Handling sensitive configuration details, such as passwords, and securing access through firewalls are fundamental steps in building a secure system.
+- This experience also improved my familiarity with tools like **SSH** and **Ubuntu**, further solidifying my capabilities as a security professional.
+
+Next, I will be focusing on the deployment of **Kibana** to enable web-based visualization and analysis of security data within the Elasticsearch environment.
+
+This challenge is proving to be an excellent opportunity to expand my practical knowledge and enhance my skill set as an aspiring SOC analyst.
 
 
 
