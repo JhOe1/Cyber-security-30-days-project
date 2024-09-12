@@ -12,7 +12,7 @@ This was a big moment for me—deploying my first **Ubuntu** virtual machine, eq
 
 ### Step 3: Installing and Configuring Elasticsearch
 
-I then downloaded the latest version of **Elasticsearch** (`8.15`), using **Wget**. The process felt empowering—especially when I saved the **security auto-configuration details**, knowing I’d need them for accessing the built-in superuser later. I kept these details safely stored for future reference.
+I then downloaded the latest version of **Elasticsearch** (`8.15.1`), using **Wget**. The process felt empowering—especially when I saved the **security auto-configuration details**, knowing I’d need them for accessing the built-in superuser later. I kept these details safely stored for future reference.
 
 I also jumped into the configuration file (`elasticsearch.yml`) to update the **network.host** setting so I could access the instance from my analyst laptop. I used the private IP `172.31.X.X` to ensure everything was locked in correctly.
 
