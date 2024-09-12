@@ -16,6 +16,8 @@ Next, I deployed an **Ubuntu** virtual machine with 4 virtual CPUs and 16 GB of 
 
 ![vpc1 copy](https://github.com/user-attachments/assets/d2c1446a-273d-4309-9af7-b0ef75f1478c)
 
+![VPC2 copy](https://github.com/user-attachments/assets/57d642ad-5d6f-46cb-99a0-9f1a75008ef8)
+
 
 I kept the configuration minimal, disabling IPv6 and auto backups. After deployment, I connected to the machine via **SSH** and performed the necessary system updates (`apt-get update` and `apt-get upgrade`), ensuring the system was up to date.
 
