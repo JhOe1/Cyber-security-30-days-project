@@ -14,7 +14,7 @@ To begin, I created an account on **Vultr**, utilizing the $300 credit offer. I 
 
 Next, I deployed an **Ubuntu** virtual machine with 4 virtual CPUs and 16 GB of RAM to handle the resource demands of **Elasticsearch**.
 
-![vpc1](https://github.com/user-attachments/assets/15b90054-bb0e-4fc0-95fb-24a294bedc01)
+![vpc1 copy](https://github.com/user-attachments/assets/d2c1446a-273d-4309-9af7-b0ef75f1478c)
 
 
 I kept the configuration minimal, disabling IPv6 and auto backups. After deployment, I connected to the machine via **SSH** and performed the necessary system updates (`apt-get update` and `apt-get upgrade`), ensuring the system was up to date.
