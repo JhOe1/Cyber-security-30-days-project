@@ -37,3 +37,43 @@ Up next: Setting up **Kibana**! I’m excited to start visualizing the data I’
 If you're interested in learning alongside me, I highly encourage you to follow this challenge. There's so much more to come, and I can already feel myself growing as a security analyst!
 
 Stay tuned and stay curious!
+
+
+
+
+
+# Day 3 - SOC Analyst 30-Day Challenge
+
+## 🚀 Day 3: Spinning Up Elasticsearch on Vultr with VPC 2.0 🌐
+
+Welcome back to **Day 3** of my 30-Day SOC Analyst Challenge! Today, I’m taking on the task of setting up an **Elasticsearch** instance within a **Virtual Private Cloud (VPC)** on Vultr. Elasticsearch is a powerful tool for searching and analyzing logs, making it a key component in any SOC environment. If you're interested in following along, feel free to check out [Day 1](link-to-day-1).
+
+### 🛠️ What We Accomplished Today:
+- **Created a VPC (Virtual Private Cloud)**: Setting up a secure environment is critical, and today we deployed a VPC 2.0 in Vultr's Toronto data center.
+- **Deployed an Ubuntu Server**: After creating the VPC, I deployed an Ubuntu server (4 vCPUs and 16 GB RAM) and configured it as the base for our Elasticsearch instance.
+- **Installed and Configured Elasticsearch**: We downloaded and installed Elasticsearch version `8.15`, adjusted its network settings, and made sure it's ready to start gathering logs.
+  
+### 📝 Key Steps:
+1. **Setting Up VPC 2.0**:
+   - On Vultr, I created a Virtual Private Cloud (VPC) using the `172.31.x.x/24` range for secure communications within my environment.
+   - Pro-tip: Always ensure that your virtual machines and VPC are in the same location (e.g., Toronto) to enable seamless communication.
+
+2. **Deploying the Server**:
+   - Chose an Ubuntu 20.04 server with sufficient power (4 vCPUs, 16 GB RAM) to handle Elasticsearch.
+   - Configured SSH access using my public IP and connected to the server through PowerShell for further setup.
+
+3. **Installing Elasticsearch**:
+   - Downloaded and installed the **Elasticsearch** package.
+   - Adjusted the `elasticsearch.yml` configuration file to bind Elasticsearch to my VPC’s private IP (`172.31.x.x`).
+   - Started the Elasticsearch service and confirmed it’s up and running.
+
+4. **Configuring Security**:
+   - Created a custom **firewall group** in Vultr to restrict access to my SOC analyst workstation only.
+   - Locked down SSH and Elasticsearch ports to prevent unauthorized access.
+
+### 🔑 Key Commands Used:
+
+- Updating Ubuntu repositories:
+   ```bash
+   sudo apt-get update && sudo apt-get upgrade -y
+
