@@ -18,7 +18,7 @@ Next, I deployed an **Ubuntu** virtual machine with 4 virtual CPUs and 16 GB of 
 <br>
 <br><br><br>
 
-<br>
+
 ![VPC2 copy](https://github.com/user-attachments/assets/57d642ad-5d6f-46cb-99a0-9f1a75008ef8)
 
 
@@ -35,7 +35,7 @@ To mitigate potential risks during future configurations, I also took a **snapsh
 <br>
 <br><br><br>
 
-<br>
+
 ![vpc7](https://github.com/user-attachments/assets/79275ced-3b25-4834-96c3-d669da1df0c6)
 
 
