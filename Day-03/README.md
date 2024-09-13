@@ -22,6 +22,14 @@ Next, I deployed an **Ubuntu** virtual machine with 4 virtual CPUs and 16 GB of 
 ![VPC2 copy](https://github.com/user-attachments/assets/57d642ad-5d6f-46cb-99a0-9f1a75008ef8)
 
 
+
+<br><br><br>
+
+
+![vpc8 copy](https://github.com/user-attachments/assets/48699baa-778e-47ec-bc03-f6458851f7a3)
+
+
+
 ### Step 3: Taking a Snapshot for Rollback
 
 To mitigate potential risks during future configurations, I also took a **snapshot** of the current setup. This will allow me to easily revert to this stable state in case of any errors or misconfigurations during subsequent installations and adjustments.
