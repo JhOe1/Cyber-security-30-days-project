@@ -6,6 +6,12 @@ On Day 4 of the 30-day SOC Analyst challenge, I focused on setting up and config
    - I downloaded Kibana from the official Elastic website, selecting the appropriate Debian package for installation.
    - Using `wget`, I downloaded the package and installed it with `dpkg`.
 
+
+![vpc12](https://github.com/user-attachments/assets/7ad89bba-680a-4ffa-953f-d6afb2d8bfba)
+
+
+
+
 2. **Configuring Kibana**:
    - I edited the `kibana.yml` configuration file to set the server port and host. Specifically, I updated the server host to the public IP address of the virtual machine to ensure proper accessibility.
    - After making these changes, I restarted the Kibana service to apply the new configuration.
