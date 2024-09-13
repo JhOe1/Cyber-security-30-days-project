@@ -66,7 +66,8 @@ I ensured that only authorized connections would be permitted. I created a custo
 <br><br><br>
 
 
-![vpc10](https://github.com/user-attachments/assets/3ee42af1-3d59-4342-bff4-07de69ebecab)
+![vpc10 copy](https://github.com/user-attachments/assets/bfdfdd1f-30cc-4ba8-9c66-bf18c189e64b)
+
 
 
 
