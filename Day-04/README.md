@@ -9,6 +9,7 @@ On Day 4 of the 30-day SOC Analyst challenge, I focused on setting up and config
 
 ![vpc12](https://github.com/user-attachments/assets/7ad89bba-680a-4ffa-953f-d6afb2d8bfba)
 
+![vpc13](https://github.com/user-attachments/assets/ab9ad5b4-f19c-4c6f-9e37-73312f5d2a4d)
 
 
 
