@@ -8,7 +8,7 @@ Today marks Day 3 of the **30-Day SOC Analyst Challenge**, where I successfully 
 
 ### Step 1: Setting Up a Vultr Account and Configuring the VPC
 
-To begin, I created an account on **Vultr**, utilizing the $300 credit offer. I proceeded by setting up a **VPC 2.0** in the **Manchester** region as it was the cloeset to me, I aslo ensured all virtual machines remain within the same location for optimal network connectivity. I allocated a private IP range of `172.31.x.x/24` for this project, which will be used throughout the upcoming tasks.
+To begin, I created an account on **Vultr**, utilizing the $300 credit offer. I proceeded by setting up a **VPC 2.0** in the **Manchester** region as it was the cloeset to me, I aslo ensured all virtual machines remain within the same location for optimal network connectivity. I allocated a private IP range of `172.31.x.x/24` for this project, which will be used throughout the upcoming tasks.I kept the configuration minimal, disabling IPv6 and auto backups.
 
 ### Step 2: Deploying the Virtual Machine for Elasticsearch
 
@@ -26,9 +26,15 @@ To mitigate potential risks during future configurations, I also took a **snapsh
 ![VPC4 copy](https://github.com/user-attachments/assets/7f49e60f-6168-4c8e-9a05-0711e52a3a09)
 
 
+ After deployment, I used **PowerShell** to SSH into the Ubuntu server, leveraging the public IP provided by Vultr. Once connected, I downloaded and installed **Elasticsearch** by running the necessary commands to fetch the latest version from the official site. This ensured that I had a direct and secure connection to the server for handling the installation process and performed the necessary system updates (`apt-get update` and `apt-get upgrade`), ensuring the system was up to date.
+
+![vpc5  copy](https://github.com/user-attachments/assets/c8aa47c8-2a85-4da6-9c48-63aab131f05c)
 
 
-I kept the configuration minimal, disabling IPv6 and auto backups. After deployment, I connected to the machine via **SSH** and performed the necessary system updates (`apt-get update` and `apt-get upgrade`), ensuring the system was up to date.
+
+
+
+
 
 ### Step 3: Installing and Configuring Elasticsearch
 
