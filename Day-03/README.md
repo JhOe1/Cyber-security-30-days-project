@@ -76,6 +76,15 @@ I ensured that only authorized connections would be permitted. I created a custo
 
 The final step involved enabling and starting the **Elasticsearch service**. After verifying that the service was running using `systemctl status elasticsearch`, I confirmed that the installation and configuration were successful. This lays the groundwork for future activities, such as data analysis and security event correlation.
 
+
+![vpc11](https://github.com/user-attachments/assets/81900c70-9fe2-4d68-a891-69a58a486439)
+
+
+
+
+
+
+
 ---
 
 ### Key Takeaways:
