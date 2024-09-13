@@ -60,8 +60,16 @@ I downloaded **Elasticsearch 8.15.1** using **Wget** and carefully stored the **
 
 
 ### Step 5: Enhancing Security with Firewall Configurations
+I ensured that only authorized connections would be permitted. I created a custom **firewall group** within Vultr, restricting **SSH access** to my specific IP address. This additional layer of security reinforces best practices for protecting the server from unauthorized access.
 
-Security is paramount, and I ensured that only authorized connections would be permitted. I created a custom **firewall group** within Vultr, restricting **SSH access** to my specific IP address. This additional layer of security reinforces best practices for protecting the server from unauthorized access.
+
+<br><br><br>
+
+
+![vpc10](https://github.com/user-attachments/assets/3ee42af1-3d59-4342-bff4-07de69ebecab)
+
+
+
 
 ### Step 6: Starting the Elasticsearch Service
 
