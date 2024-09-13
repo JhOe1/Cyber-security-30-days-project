@@ -23,10 +23,7 @@ Next, I deployed an **Ubuntu** virtual machine with 4 virtual CPUs and 16 GB of 
 
 
 
-<br><br><br>
 
-
-![vpc8 copy](https://github.com/user-attachments/assets/48699baa-778e-47ec-bc03-f6458851f7a3)
 
 
 
@@ -48,6 +45,10 @@ To mitigate potential risks during future configurations, I also took a **snapsh
 
 
 
+<br><br><br>
+
+
+![vpc8 copy](https://github.com/user-attachments/assets/48699baa-778e-47ec-bc03-f6458851f7a3)
 
 
 ### Step 3: Installing and Configuring Elasticsearch
