@@ -20,6 +20,8 @@ On Day 4 of the 30-day SOC Analyst challenge, I focused on setting up and config
 ![vpc15 copy](https://github.com/user-attachments/assets/e31206e0-94bf-4617-a230-7a96de6f286d)
 
 
+![vpc14](https://github.com/user-attachments/assets/60f3e0a9-1897-4e23-8fc5-9489096d09af)
+
 
 
 3. **Firewall Configuration**:
