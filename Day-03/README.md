@@ -45,15 +45,19 @@ To mitigate potential risks during future configurations, I also took a **snapsh
 
 
 
+
+
+
+### Step 3: Installing and Configuring Elasticsearch
+
+I downloaded **Elasticsearch 8.15** using **Wget** and carefully stored the **security auto-configuration details**, which included the superuser password necessary for future access. I then edited the `elasticsearch.yml` configuration file, updating the **network.host** setting with the appropriate private IP address (`172.31.X.X`) to allow secure access from my local network.
+
 <br><br><br>
 
 
 ![vpc8 copy](https://github.com/user-attachments/assets/48699baa-778e-47ec-bc03-f6458851f7a3)
 
 
-### Step 3: Installing and Configuring Elasticsearch
-
-I downloaded **Elasticsearch 8.15** using **Wget** and carefully stored the **security auto-configuration details**, which included the superuser password necessary for future access. I then edited the `elasticsearch.yml` configuration file, updating the **network.host** setting with the appropriate private IP address (`172.31.X.X`) to allow secure access from my local network.
 
 ### Step 4: Enhancing Security with Firewall Configurations
 
