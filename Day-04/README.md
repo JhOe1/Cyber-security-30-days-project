@@ -26,14 +26,16 @@ On Day 4 of the 30-day SOC Analyst challenge, I focused on setting up and config
 <br>
 <br><br><br>
 
-![vpc14](https://github.com/user-attachments/assets/60f3e0a9-1897-4e23-8fc5-9489096d09af)
+![vpc14](https://github.com/user-attachments/assets/ad786aae-10e6-4778-9e4b-5a633570f495)
+
 
 
 
 3. **Firewall Configuration**:
    - I encountered connection issues due to firewall settings that initially allowed only SSH connections on port 22. To resolve this, I adjusted the firewall rules to allow traffic on port 5601 for Kibana.
    - Both the Vulture instance firewall and the Ubuntu server firewall were updated using `ufw`.
-![vpc16](https://github.com/user-attachments/assets/f3735f29-7d49-4052-894b-c920e898b4ab)
+![vpc16 copy](https://github.com/user-attachments/assets/c216c9b0-bbc1-4073-8772-67e69ec3dca7)
+
 
 <br>
 <br><br><br>
