@@ -48,9 +48,9 @@ To mitigate potential risks during future configurations, I also took a **snapsh
 
 
 
-### Step 3: Installing and Configuring Elasticsearch
+### Step 4: Installing and Configuring Elasticsearch
 
-I downloaded **Elasticsearch 8.15** using **Wget** and carefully stored the **security auto-configuration details**, which included the superuser password necessary for future access. I then edited the `elasticsearch.yml` configuration file, updating the **network.host** setting with the appropriate private IP address (`172.31.X.X`) to allow secure access from my local network.
+I downloaded **Elasticsearch 8.15.1** using **Wget** and carefully stored the **security auto-configuration details**, which included the superuser password necessary for future access. I then edited the `elasticsearch.yml` configuration file, updating the **network.host** setting with the appropriate private IP address (`172.31.X.X`) to allow secure access from my local network.
 
 <br><br><br>
 
@@ -59,11 +59,11 @@ I downloaded **Elasticsearch 8.15** using **Wget** and carefully stored the **se
 
 
 
-### Step 4: Enhancing Security with Firewall Configurations
+### Step 5: Enhancing Security with Firewall Configurations
 
 Security is paramount, and I ensured that only authorized connections would be permitted. I created a custom **firewall group** within Vultr, restricting **SSH access** to my specific IP address. This additional layer of security reinforces best practices for protecting the server from unauthorized access.
 
-### Step 5: Starting the Elasticsearch Service
+### Step 6: Starting the Elasticsearch Service
 
 The final step involved enabling and starting the **Elasticsearch service**. After verifying that the service was running using `systemctl status elasticsearch`, I confirmed that the installation and configuration were successful. This lays the groundwork for future activities, such as data analysis and security event correlation.
 
