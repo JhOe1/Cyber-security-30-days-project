@@ -86,16 +86,27 @@ The final step involved enabling and starting the **Elasticsearch service**. Aft
 
 
 ---
+### Challenges :
+
+Firewall Rule Configuration Challenge
+While configuring the firewall rule to restrict SSH access to my server, I encountered a challenge. Initially, I mistakenly used the private IP address provided by my ISP instead of the public IP address. This oversight prevented me from successfully connecting via SSH.
+
+After some research, I discovered the issue and used WhatIsMyIP to identify my public IP address. Once I updated the firewall rule with the correct public IP address, the SSH connection was successfully established.
+
+
+
+
+
 
 ### Key Takeaways:
 
-- Setting up and securing cloud infrastructure is a crucial skill for a SOC analyst. The ability to deploy virtual machines and configure private networks will serve me well in a professional environment.
+- Setting up and securing cloud infrastructure is a crucial skill for a SOC analyst. 
 - Handling sensitive configuration details, such as passwords, and securing access through firewalls are fundamental steps in building a secure system.
 - This experience also improved my familiarity with tools like **SSH** and **Ubuntu**, further solidifying my capabilities as a security professional.
 
 Next, I will be focusing on the deployment of **Kibana** to enable web-based visualization and analysis of security data within the Elasticsearch environment.
 
-This challenge is proving to be an excellent opportunity to expand my practical knowledge and enhance my skill set as an aspiring SOC analyst.
+
 
 
 
