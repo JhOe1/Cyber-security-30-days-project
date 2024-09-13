@@ -31,6 +31,7 @@ To mitigate potential risks during future configurations, I also took a **snapsh
 ![vpc5  copy](https://github.com/user-attachments/assets/c8aa47c8-2a85-4da6-9c48-63aab131f05c)
 
 
+![vpc7](https://github.com/user-attachments/assets/79275ced-3b25-4834-96c3-d669da1df0c6)
 
 
 
