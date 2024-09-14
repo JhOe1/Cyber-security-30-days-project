@@ -1,6 +1,6 @@
 # Day 6: Understanding Elastic Agent and Fleet Server
 
-On Day 6 of my **30-Day SOC Analyst Challenge**, I focused on understanding the **Elastic Agent** and **Fleet Server**, two critical components for managing logs and endpoint data within a centralized environment. This marks a key step in efficiently monitoring and managing multiple endpoints.
+On Day 6 of my **30-Day SOC Analyst Challenge**, I focused on understanding the **Elastic Agent** and **Fleet Server**, two critical components for managing logs and endpoint data within a centralized environment. This will help in monitoring and managing multiple endpoints.
 
 ## Overview of Elastic Agent
 
