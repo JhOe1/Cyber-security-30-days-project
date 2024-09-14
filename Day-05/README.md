@@ -18,12 +18,16 @@ Today, I focused on setting up a **Windows Server** in the cloud, acting as the 
    - I initially considered adding this server to the **Virtual Private Cloud (VPC)** where my OS Ticket and Fleet Servers are hosted. However, for enhanced security and isolation, I decided against it to minimize exposure in the event of a compromise. Instead, I kept this Windows Server separate from the VPC.
    - No **IPv6** and **auto backups** were selected as these were not necessary for this exercise.
 
+![vpc22](https://github.com/user-attachments/assets/a4f56c81-ce10-4781-b919-27b087bef589)
+
+
+
+
 3. **Firewall**: Left the **firewall group** unconfigured to ensure open access to the server from the internet, simulating a real-world scenario where a server might be improperly exposed.
 
-4. **Server Naming**: Following the naming convention for the challenge, I named the server:
-   - **mydefer-win-[username]**. For this example, I used "**mydefer-win-stevenrocks**."
 
-## Validation and Remote Access:
+
+4. ## Validation and Remote Access:
 
 After deployment, I confirmed the server was running and accessible via **RDP**:
 - Copied the public IP address and connected using **Remote Desktop**.
@@ -33,7 +37,9 @@ After deployment, I confirmed the server was running and accessible via **RDP**:
 
 With **RDP exposed to the internet**, I’ll soon begin seeing login attempts and other potential attack traffic on this machine. This data will later help me analyze common attack patterns, brute-force attempts, and suspicious behavior sourced from the internet. In the next phase, I will set up a **Fleet Server** for centralized endpoint management.
 
----
+![vpc23](https://github.com/user-attachments/assets/e8f79522-dca6-4056-b725-3e0508680f6a)
+
+
 
 ## Insights and Learning:
 
