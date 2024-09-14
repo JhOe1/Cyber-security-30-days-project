@@ -55,5 +55,13 @@ On Day 4 of the 30-day SOC Analyst challenge, I focused on setting up and config
 
 5. **Configuring Encryption Keys**:
    - To ensure persistent key storage for Kibana, I generated encryption keys and added them to Kibana's key store. This prevents issues with saved objects after restarts.
+  
+![vpc19 copy](https://github.com/user-attachments/assets/320cad77-07e4-4d85-a124-547ee01c582d)
+
+
+
 
 By the end of the day, Kibana was successfully installed, configured, and operational, allowing me to leverage its data visualization and dashboard capabilities.
+
+
+![vpc20](https://github.com/user-attachments/assets/b6203e55-3981-47fd-9e09-7b156e439431)
