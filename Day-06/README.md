@@ -36,9 +36,5 @@ Today’s focus on the **Elastic Agent** and **Fleet Server** solidified my unde
 
 In the next step of the challenge, I’ll be diving into how to install an Elastic Agent and configure the Fleet Server for centralized management.
 
----
 
-*Follow along as I continue this 30-day journey to sharpen my skills as a SOC Analyst.*
-
----
 
