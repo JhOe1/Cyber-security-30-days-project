@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to Day 7 of the 30-day SOC Analyst challenge, a series designed to help aspiring SOC Analysts gain practical, hands-on experience in cybersecurity.
+Welcome to Day 7 of the 30-day SOC Analyst challenge.
 
 ### Objective
 Today's session is focused on deploying and managing an Elastic Agent on a Windows Server for centralized monitoring and management using a Fleet server.
