@@ -9,15 +9,20 @@ Today's session is focused on deploying and managing an Elastic Agent on a Windo
 
 ### Key Tasks
 1. **Deploy a Fleet Server**:  
-   Created a new Ubuntu server instance to act as the Fleet Server. The server was set up to manage and monitor our Windows server through a centralized platform.
+   Created a new Ubuntu server to act as the Fleet Server. The server was set up to manage and monitor our Windows server through a centralized platform.
+
+
+![vpc29](https://github.com/user-attachments/assets/75edb375-f511-4ff4-872c-2ce2e1b0d1e7)
+
    
-2. **Configure Elastic Agent**:  
+   
+3. **Configure Elastic Agent**:  
    Installed the Elastic Agent on the Windows Server created in Day 5 and ensured that it enrolled properly into the Fleet server for central monitoring.
 
-3. **Firewall Configuration**:  
+4. **Firewall Configuration**:  
    Updated and troubleshooted firewall rules to allow proper communication between the Fleet Server and the Windows Server. Specifically, modified rules to allow connections on ports `9200` (ElasticSearch) and `8220` (Fleet server).
 
-4. **Elastic Agent Troubleshooting**:  
+5. **Elastic Agent Troubleshooting**:  
    Faced some challenges during the enrollment process due to misconfigurations and firewall rules. Resolved the issues by updating firewall rules and adjusting the Fleet server settings in the Elastic GUI to ensure successful communication.
 
 ### Learnings
