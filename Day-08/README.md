@@ -1,4 +1,4 @@
-# Day 5 - Enhancing Endpoint Visibility with Sysmon
+# Day 8 - Enhancing Endpoint Visibility with Sysmon
 
 ### Objective:
 Endpoint visibility is crucial for effective incident detection and response. While Windows systems have default logging enabled, these settings are insufficient for capturing critical events like process creations. Today, I explored how to significantly enhance this visibility using Sysmon, a powerful tool from Microsoft Sysinternals.
