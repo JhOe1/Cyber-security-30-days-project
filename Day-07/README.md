@@ -28,16 +28,31 @@ Successfully installed Fleet Server Agent on the Ubuntu Server
 
 ![vpc24](https://github.com/user-attachments/assets/233e159f-ef76-429c-86bc-fcbe6b3c288e)
 
+3. **Elastic Agent Troubleshooting**:  
+   Faced some challenges during the enrollment process due to misconfigurations and firewall rules. Resolved the issues by updating firewall rules and adjusting the Fleet server settings in the Elastic GUI to ensure successful communication.
+
+
+   ![vpc26](https://github.com/user-attachments/assets/61514d73-7fd8-437d-87e9-d7ade4463e85)
+
+
    
-   
-3. **Configure Elastic Agent**:  
+5. **Configure Elastic Agent**:  
    Installed the Elastic Agent on the Windows Server created in Day 5 and ensured that it enrolled properly into the Fleet server for central monitoring.
 
-4. **Firewall Configuration**:  
+
+![vpc27](https://github.com/user-attachments/assets/73c9bdee-4fc6-4574-82f3-8aeca398d265)
+
+<br>
+<br><br><br>
+
+![vpc28](https://github.com/user-attachments/assets/1135b038-5c3d-4e34-aac8-8886ed23f5ee)
+
+
+
+6. **Firewall Configuration**:  
    Updated and troubleshooted firewall rules to allow proper communication between the Fleet Server and the Windows Server. Specifically, modified rules to allow connections on ports `9200` (ElasticSearch) and `8220` (Fleet server).
 
-5. **Elastic Agent Troubleshooting**:  
-   Faced some challenges during the enrollment process due to misconfigurations and firewall rules. Resolved the issues by updating firewall rules and adjusting the Fleet server settings in the Elastic GUI to ensure successful communication.
+
 
 ### Learnings
 - **Firewall Management**:  
@@ -46,8 +61,6 @@ Successfully installed Fleet Server Agent on the Ubuntu Server
 - **Elastic Agent Enrollment**:  
    The importance of proper configuration, especially when dealing with self-signed certificates and ensuring that the necessary ports are open for agent communication.
 
-- **System Logging**:  
-   Successfully captured logs from the Windows Server, including Event Code `4625`, which represents a failed login attempt. This provided valuable insight into monitoring authentication attempts and other critical system events.
 
 ### Key Commands & Troubleshooting
 - **Firewall Configuration**:
