@@ -14,6 +14,12 @@ Today's session is focused on deploying and managing an Elastic Agent on a Windo
 
 ![vpc29](https://github.com/user-attachments/assets/75edb375-f511-4ff4-872c-2ce2e1b0d1e7)
 
+<br>
+<br><br><br>
+
+Successfully installed Fleet Server Agent on the Ubuntu Server
+![vpc24](https://github.com/user-attachments/assets/233e159f-ef76-429c-86bc-fcbe6b3c288e)
+
    
    
 3. **Configure Elastic Agent**:  
