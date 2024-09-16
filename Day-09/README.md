@@ -1,45 +1,45 @@
-# Day 9 - SOC Analyst Challenge
+# Day 9 - Setting up Sysmon the Windows Server
 
-**Objective:**  
-Today's challenge focuses on installing and configuring Sysmon on the Windows Server machine created during Day 5. Sysmon plays a crucial role in monitoring and detecting malicious activities by logging various system events.
+## Objective:
+In today’s session, I successfully installed and configured Sysmon on the Windows Server machine created on Day 5. The goal was to enable detailed monitoring of system events through Sysmon logging, which will be essential for detecting and analyzing potential security incidents.
 
 ---
 
-## Steps:
+## Process:
 
-1. **Sysmon Installation:**
-   - Downloaded the latest version of Sysmon (v15.15).
-   - Connected to the Windows Server machine via Remote Desktop.
-   - Navigated to Sysmon’s official page on Microsoft Learn to download the binaries.
-   - Extracted the Sysmon binaries and prepared them for configuration.
+1. **Sysmon Installation**:
+   - I began by downloading the latest version of Sysmon (v15.15) from the official [Microsoft Learn](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) page.
+   - After connecting to my Windows Server via RDP, I navigated to the Sysmon page, downloaded the binaries, and extracted them in the appropriate directory.
 
-2. **Sysmon Configuration:**
-   - Obtained a widely-used Sysmon configuration file from Olaf's GitHub repository.
-   - Downloaded the `sysmon-config.xml` file and saved it in the Sysmon directory.
-   - Opened PowerShell as an administrator and navigated to the Sysmon directory.
-   - Installed Sysmon using the following command:
+2. **Obtaining the Configuration File**:
+   - A well-known Sysmon configuration file created by Olaf was selected for this task. I located it on [GitHub](https://github.com/olafhartong/sysmon-modular) and saved the `sysmon-config.xml` file in the Sysmon directory.
+   - The configuration file ensures that Sysmon logs key system events, such as network connections and process creations, which are crucial for security monitoring.
+
+3. **Sysmon Configuration and Service Setup**:
+   - Using PowerShell (run as Administrator), I navigated to the Sysmon directory and installed Sysmon with the following command:
      ```bash
      sysmon64.exe -accepteula -i sysmon-config.xml
      ```
-   - Verified successful installation by checking the Sysmon service and confirming the generation of logs in Event Viewer.
+   - After agreeing to the license, Sysmon was installed, and I verified the Sysmon service was running successfully by checking Windows Services.
 
-3. **Verifying Logs:**
-   - Opened Event Viewer and navigated to `Applications and Services Logs > Microsoft > Windows > Sysmon`.
-   - Confirmed that Sysmon was logging events, including event ID 3 (network connections).
+4. **Verifying Event Logs**:
+   - After installation, I opened **Event Viewer** and navigated to `Applications and Services Logs > Microsoft > Windows > Sysmon > Operational`.
+   - Event ID 3, which logs network connections, was successfully generated and displayed in the logs.
+   - This confirmed that Sysmon was not only installed correctly but also actively monitoring system activity and generating useful data.
 
 ---
 
 ## Key Takeaways:
 
-- Sysmon is now actively monitoring system events on the Windows Server.
-- Understanding Sysmon's event logs, such as network connections (Event ID 3), helps in analyzing potential security incidents.
-- This configuration lays the groundwork for integrating logs into Elasticsearch, which will be covered in upcoming days.
+- **Sysmon's Role**: By monitoring critical system events such as network connections (Event ID 3), Sysmon provides valuable insight into potential security incidents, helping with threat detection and investigation.
+- **Configuring Sysmon**: Proper configuration is key to getting the most out of Sysmon. Using an established configuration file like Olaf's allows for comprehensive monitoring.
+- **Next Steps**: In future sessions, I will focus on integrating Sysmon and Microsoft Defender logs into Elasticsearch, further enhancing the system's logging and analysis capabilities.
 
 ---
 
-## Next Steps:
-- In the next session, I'll integrate Sysmon and Microsoft Defender logs into the Elasticsearch instance. This will further enhance our ability to analyze and visualize the data for incident response.
+## What’s Next:
+The next step in this challenge is pushing both Sysmon and Microsoft Defender logs into my Elasticsearch instance. This will enable advanced searching and visualization of security-related events, allowing for deeper incident analysis.
+
+Stay tuned as I continue building a complete security monitoring environment!
 
 ---
-
-Stay focused, and let's keep building toward a robust security monitoring setup.
