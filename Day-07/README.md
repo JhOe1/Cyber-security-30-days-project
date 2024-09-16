@@ -48,20 +48,4 @@ Today's session is focused on deploying and managing an Elastic Agent on a Windo
     ```
 
 ### Conclusion
-By the end of this session, I successfully set up and enrolled a Windows Server into the Fleet management server. This marks an important step in building centralized monitoring capabilities for a security operations center (SOC). Future lessons will involve diving deeper into log analysis and leveraging system activity monitoring tools such as **Sysmon**.
-
----
-
-## Next Steps
-In the next session, I will explore **Sysmon**—a powerful tool that monitors and logs system activity on Windows machines, offering valuable insights for threat detection and system auditing.
-
-Stay tuned!
-
----
-
-**Follow the challenge:**  
-- GitHub: [Your GitHub Profile]  
-- Twitter: [Your Twitter Handle]
-
-Thank you for following along on this journey!
-
+By the end of this session, I successfully set up and enrolled a Windows Server into the Fleet management server. This is important in building centralized monitoring capabilities for a security operations center (SOC).
