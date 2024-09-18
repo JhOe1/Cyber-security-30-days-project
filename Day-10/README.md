@@ -30,6 +30,8 @@ The primary goal for today is to ingest event logs from Sysmon and Microsoft Def
   
 ![vpc35](https://github.com/user-attachments/assets/a6db4006-a9ab-4157-b140-c24361e66bf9)
 
+<br>
+<br><br><br>
 
 ![vpc36](https://github.com/user-attachments/assets/cd2e69f8-b33b-4616-ad89-73bc96e2cb01)
 
