@@ -35,11 +35,24 @@ The primary goal for today is to ingest event logs from Sysmon and Microsoft Def
 
 ![vpc36](https://github.com/user-attachments/assets/cd2e69f8-b33b-4616-ad89-73bc96e2cb01)
 
-5. **Testing the Configuration**
+
+
+5. **Troubleshooting**
+   - Resolved connection issues by adjusting firewall settings to allow incoming connections to Elasticsearch on port 9200. This step ensured that agents could communicate with the server, enabling smooth log ingestion.
+
+![vpc37](https://github.com/user-attachments/assets/1a34f62e-6275-4ad4-9dd5-f640615369c1)
+
+
+
+
+
+6. **Testing the Configuration**
    - Conducted tests by disabling Windows Defender on the server to trigger event ID 50001. After re-enabling the protection, confirmed the logs were ingested successfully into Elasticsearch.
 
-6. **Troubleshooting**
-   - Resolved connection issues by adjusting firewall settings to allow incoming connections to Elasticsearch on port 9200. This step ensured that agents could communicate with the server, enabling smooth log ingestion.
+![vpc39](https://github.com/user-attachments/assets/f3f7efa7-0680-4133-af62-ee368feab75f)
+
+
+
 
 ### Key Takeaways
 
