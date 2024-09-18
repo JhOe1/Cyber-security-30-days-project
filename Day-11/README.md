@@ -1,4 +1,4 @@
-# SOC Analyst Challenge - Day 11
+
 
 ## Topic: Brute Force Attacks
 
