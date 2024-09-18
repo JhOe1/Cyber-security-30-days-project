@@ -19,6 +19,11 @@ The primary goal for today is to ingest event logs from Sysmon and Microsoft Def
 3. **Set Up Sysmon Integration**
    - Retrieved the Sysmon channel name directly from the Windows Server Event Viewer and input it into the Elasticsearch configuration.
    - Applied this configuration to the existing Windows policy created earlier, ensuring all event logs from Sysmon are properly captured.
+  
+
+![vpc34](https://github.com/user-attachments/assets/6d64f07a-f11d-409c-a6fb-d32a76fc3eeb)
+
+
 
 4. **Add Microsoft Defender Integration**
    - Followed the same process for Microsoft Defender, focusing on critical event IDs (1116, 1117, and 50001) to ensure that only relevant security logs were ingested, such as malware detection events and real-time protection statuses.
