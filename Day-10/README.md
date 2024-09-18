@@ -27,6 +27,11 @@ The primary goal for today is to ingest event logs from Sysmon and Microsoft Def
 
 4. **Add Microsoft Defender Integration**
    - Followed the same process for Microsoft Defender, focusing on critical event IDs (1116, 1117, and 50001) to ensure that only relevant security logs were ingested, such as malware detection events and real-time protection statuses.
+  
+![vpc35](https://github.com/user-attachments/assets/a6db4006-a9ab-4157-b140-c24361e66bf9)
+
+
+![vpc36](https://github.com/user-attachments/assets/cd2e69f8-b33b-4616-ad89-73bc96e2cb01)
 
 5. **Testing the Configuration**
    - Conducted tests by disabling Windows Defender on the server to trigger event ID 50001. After re-enabling the protection, confirmed the logs were ingested successfully into Elasticsearch.
