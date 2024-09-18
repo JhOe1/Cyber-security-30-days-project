@@ -12,6 +12,9 @@ The primary goal for today is to ingest event logs from Sysmon and Microsoft Def
 2. **Add Custom Windows Event Logs**
    - Set up log ingestion for Sysmon by selecting the **Custom Windows Event Log** package. This package allows the ingestion of events from various Windows Event log channels.
    - Configured the integration to target the Sysmon event log, ensuring it collected the appropriate operational logs.
+![vpc33](https://github.com/user-attachments/assets/7df4a306-bc40-439a-8348-b5d6b3e81339)
+
+
 
 3. **Set Up Sysmon Integration**
    - Retrieved the Sysmon channel name directly from the Windows Server Event Viewer and input it into the Elasticsearch configuration.
