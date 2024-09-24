@@ -44,7 +44,7 @@ In today's challenge, I successfully set up an SSH server in the cloud and analy
    - Used the `grep` command to filter for failed login attempts.
    - Narrowed the scope to examine only the failed attempts targeting the root user account.
    - Employed the `cut` command to extract the IP addresses associated with these failed attempts for further investigation.
-   - I aslo look up some of the IP address on vrus total and i saw that some of the IP address have been flagged as malicious 
+   - I aslo look up some of the IP address on virus total and i saw that some of the IP address have been flagged as malicious 
   
 
 
