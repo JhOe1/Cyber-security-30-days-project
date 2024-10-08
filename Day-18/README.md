@@ -39,14 +39,12 @@ In the 30-day challenge, we will be using **Mythic**. It's a C2 framework built 
 
 ## Conclusion
 
-By now, you should have a solid understanding of:
+I now have a better understanding of:
 - **What C2 is**: A method for attackers to control compromised systems.
 - **Why C2 is important**: It enables attackers to execute various actions and stay persistent in compromised environments.
-- **Common C2 tools**: We reviewed Metasploit, Cobalt Strike, Sliver, and Mythic.
+- **Common C2 tools**: Metasploit, Cobalt Strike, Sliver, and Mythic.
 
-In the next session, we'll explore setting up our own Mythic server and deploy an agent on the Windows Server, creating a successful C2 session.
 
-Stay curious and do things differently!
 
 ---
 
