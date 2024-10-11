@@ -7,6 +7,11 @@ On Day 20, I explored setting up my own Mythic Command and Control (C2) instance
    - I used Vultr cloud services to deploy a new server, running on Ubuntu, to host my Mythic C2 instance.
    - This involved setting up a virtual machine with specific configurations for memory and CPU allocation.
 
+
+
+
+
+
 2. **Kali Linux Installation**:
    - Alongside the server, I installed Kali Linux on my local machine using VMware, ensuring it was properly configured for the tasks ahead.
 
